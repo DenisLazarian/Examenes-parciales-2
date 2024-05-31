@@ -41,7 +41,7 @@ public class ProcessResult extends CommandLineProgram {
     }
 
     private void processResults(String line) throws  IOException{
-        StringTokenizer st = new StringTokenizer(" ", line);
+        StringTokenizer st = new StringTokenizer(line, " ");
         long id1 = Long.parseLong(st.nextToken());
         long id2 = Long.parseLong(st.nextToken());
         int goals1 = Integer.parseInt(st.nextToken());

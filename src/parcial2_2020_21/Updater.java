@@ -38,7 +38,7 @@ public class Updater extends CommandLineProgram {
     }
 
     private void updateStats(String line) throws IOException {
-        StringTokenizer st = new StringTokenizer(",", line);
+        StringTokenizer st = new StringTokenizer( line, ",");
         int x = Integer.parseInt(st.nextToken());
         int y = Integer.parseInt(st.nextToken());
         int h = Integer.parseInt(st.nextToken());

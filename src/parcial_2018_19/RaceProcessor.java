@@ -40,7 +40,7 @@ public class RaceProcessor extends CommandLineProgram {
     }
 
     private void processRaces(String line) throws IOException {
-        StringTokenizer tk = new StringTokenizer(",", line);
+        StringTokenizer tk = new StringTokenizer(line, ",");
         int i = 0;
         while(tk.hasMoreTokens() && i< POINTS.length){
             int id = Integer.parseInt(tk.nextToken());

@@ -32,7 +32,7 @@ public class MovementProcessor extends CommandLineProgram {
     }
 
     private void processMovements(String line) throws IOException{
-        StringTokenizer st = new StringTokenizer(",", line);
+        StringTokenizer st = new StringTokenizer( line, ",");
         String mode = st.nextToken();
         switch (mode){
             case "ALTA":{

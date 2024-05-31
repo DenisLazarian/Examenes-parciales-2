@@ -66,7 +66,7 @@ public class SalesProcessor extends CommandLineProgram {
     }
 
     private void processSales(String line) throws IOException {
-        StringTokenizer st = new StringTokenizer(";",line);
+        StringTokenizer st = new StringTokenizer(line, ";");
 
         while(st.hasMoreTokens()){
             long id = Long.parseLong(st.nextToken());
