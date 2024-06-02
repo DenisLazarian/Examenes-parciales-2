@@ -14,7 +14,7 @@ public class Problema2 extends CommandLineProgram {
     }
 
     private boolean isDecreasing(int[] v){
-        return isDecreasing(v, v.length-1);
+        return isDecreasing(v, v.length);
     }
 
 
@@ -22,8 +22,8 @@ public class Problema2 extends CommandLineProgram {
         if(pos==0){
             return true;
         }else{
-            boolean dec = isDecreasing(v, pos-1);
-            return dec && v[pos-1] >= v[pos];
+            boolean dec = isDecreasing(v, pos-2);
+            return dec && v[pos-2] >= v[pos-1];
         }
     }
 
